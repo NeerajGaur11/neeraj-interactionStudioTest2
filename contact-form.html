@@ -18,6 +18,7 @@
                 <div class="container">
                     <div class="row pl-5 pt-3">
                         <div class="col-12 pt-3">
+                            <form method="POST" onsubmit="subbtn();">
                             <input type="text" placeholder="name" style="width:85%;border:transparent;border-bottom:2px solid black;height:40px" class="name">
                             <div class="name-hide"></div>
                         </div>
@@ -34,8 +35,11 @@
                             <div class="hide-message"></div>
                         </div>
                         <div class="col-12 pt-5">
-                            <a href="j"><span class="btn text-white send-button" id="sendbtn" style="width:85%">send</span></a>
+                           
+                            <input type="submit" value="Send" name="submit" class="btn text-white send-button" style="width:85%">
+                           
                         </div>
+                            </form>
                     </div>
                 </div>
             </div>
@@ -99,6 +103,10 @@ if(message==""){
 }
 else{$(".hide-message").text("")}
 })
+            function subbtn()
+            {
+                alert('Thank You !!');            
+            }
 
         </script>
     </body>
